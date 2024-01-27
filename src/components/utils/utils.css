@@ -1,0 +1,47 @@
+.btn {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+  flex: 0 0 auto;
+}
+.btn:not(:last-child){
+  border-right: 1px solid #eee;
+}
+.btn:where(.active, :hover) {
+    background-color: #f35151;
+    color: #fff;
+}
+
+/* textarea */
+textarea {
+  flex: 1;
+  height: 300px;
+  resize: none;
+  border: 2px solid #0001;
+  outline: none;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  textarea{
+    flex: 0 0 200px;
+  }
+  .text_body_main>*{
+    width: 100%;
+  }
+}
+textarea:focus{
+  border-color: #fd6767;
+}
+/* heading */
+.heading {
+    font-weight: 600;
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: clamp(20px, 5vw, 25px);
+}
